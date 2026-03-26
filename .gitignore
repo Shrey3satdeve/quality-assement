@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environments
+.venv/
+venv/
+ENV/
+mini_venv/
+venv310/
+
+# Datasets
+data/
+dataset/
+mini_dataset/
+
+# Models
+*.pt
+*.pth
+*.h5
+
+# OS
+.DS_Store
+Thumbs.db
