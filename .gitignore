@@ -27,16 +27,7 @@ ENV/
 mini_venv/
 venv310/
 
-# Datasets
-data/
-dataset/
-mini_dataset/
-
-# Models
-*.pt
-*.pth
-*.h5
-
 # OS
 .DS_Store
 Thumbs.db
+
