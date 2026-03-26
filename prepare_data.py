@@ -12,7 +12,7 @@ def prepare_yolo_cls_dataset(source_base, output_base, split_ratio=0.8):
     val_dir = output_base / 'val'
     train_dir.mkdir(parents=True, exist_ok=True)
     val_dir.mkdir(parents=True, exist_ok=True)
-    
+         
     categories = ['Bad Quality_Fruits', 'Good Quality_Fruits', 'Mixed_Quality_Fruits']
     
     random.seed(42)

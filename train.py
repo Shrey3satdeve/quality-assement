@@ -18,11 +18,13 @@ def main():
     # We use a very small number of epochs for this "fast" run.
     print(f"🚀 Starting training on {device}...")
     results = model.train(
-        data='mini_dataset', 
-        epochs=2, 
-        imgsz=64, 
+        data='dataset',
+        epochs=10,
+        imgsz=128,
         device=device,
-        plots=True
+        plots=True,
+        workers=0, # Use main process for data loading to prevent memory leaks in Windows
+        batch=8 # Smaller batch size to prevent memory overload
     )
     
     print(f"Training finished! The model is saved at 'runs/classify/train/weights/best.pt'.")
